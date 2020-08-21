@@ -1,0 +1,50 @@
+    "## Exercise"
+
+    "### Exercise 1"
+
+    "#print(\"All Names: \", names)\n",
+
+    "# 1.1\n",
+
+    "#print(\"Names starting with h:\",hNames)\n",
+
+    "# 1.2\n",
+
+    "#print(\"Power of three:\", powerOfThree)\n",
+
+    "# 1.3\n",
+
+    "#print(\"Name and Length:\", nameAndLength)\n",
+
+    "# 1.4\n",
+
+    "#print(\"Numeric values:\", numericValues)\n",
+
+    "# 1.5\n",
+
+    "#print(\"Combinations:\",combinations)\n",
+
+    "#print(len(combinations))"
+
+    "### Exercise 2"
+
+    "# 2.1\n",
+
+    "#print(nameDictionary)\n",
+
+    "# 2.2\n",
+
+    "### Exercise 3"
+
+    "# 3.1\n",
+
+    "diceRange = range(1,7) # Standard six-sided die\n",
+
+    "diceCombinations = len(diceRange)**numberOfDice # Total number of combinations\n",
+
+    "# Fill the dict\n",
+
+    "# Print the dict\n",
+
+    "# Class Exercise for 01-1 Intro\n",
+
