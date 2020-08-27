@@ -1,2 +1,5 @@
 # Python Notebooks
-Solutions among other stuff for Python2020
+
+Solutions for the weekly exercises:
+
+[![Week 1](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks.git/master?urlpath=week1%2F01-Exercise-Solution.ipynb)
