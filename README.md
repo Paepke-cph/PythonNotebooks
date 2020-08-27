@@ -18,10 +18,10 @@ Week 4 Binder: TBA
 <br>
 [Week 4 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week4)
 
-Week 4 Binder: TBA
-<br>
-[Week 4 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week4)
-
 Week 5 Binder: TBA
 <br>
 [Week 5 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week5)
+
+Week 6 Binder: TBA
+<br>
+[Week 6 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week6)
