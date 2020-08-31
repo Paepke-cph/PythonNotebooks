@@ -1,5 +1,4 @@
 import os
-import glob
 
 def write_to_file(output_file, fileList):
     with open(output_file, "w") as file_object:
@@ -46,7 +45,6 @@ def get_line_containing(file_names, look_for):
     for name in file_names:
         with open(name) as file:
             for line in file.readlines():
-                print(line, look_for in line)
                 if look_for in line:
                     found.append(line)     
     return(found)

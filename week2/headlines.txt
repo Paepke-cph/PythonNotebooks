@@ -1,50 +1,34 @@
-    "## Exercise"
+    "# Week Two Exercises"
 
-    "### Exercise 1"
+    "## Exercise 1 description:\n",
 
-    "#print(\"All Names: \", names)\n",
+    "## Exercise 2 description:\n",
 
-    "# 1.1\n",
+    "  5. fifth takes a list of md files and writes all headlines (lines starting with #) to a file\n",
 
-    "#print(\"Names starting with h:\",hNames)\n",
+    "# Exercise 1"
 
-    "# 1.2\n",
+    "# Simply prints the content of the file to the console\n",
 
-    "#print(\"Power of three:\", powerOfThree)\n",
+    "# Writes a list of strings to the output_file.\n",
 
-    "# 1.3\n",
+    "# Reads an entire file to a list of strings.\n",
 
-    "#print(\"Name and Length:\", nameAndLength)\n",
+    "# Sets up the argument parser\n",
 
-    "# 1.4\n",
+    "# Exercise 2"
 
-    "#print(\"Numeric values:\", numericValues)\n",
+      "\u001b[0;32m<ipython-input-4-0a100ab2434f>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     14\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     15\u001b[0m     \u001b[0;31m# Testing the 5th function\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 16\u001b[0;31m     \u001b[0mwrite_md_headlines_to_file\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"01-Exercise-Solution.ipynb\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m\"headlines.txt\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
 
-    "# 1.5\n",
+      "\u001b[0;32m~/my_notebooks/week2/modules/utils.py\u001b[0m in \u001b[0;36mwrite_md_headlines_to_file\u001b[0;34m(file_names, output_file)\u001b[0m\n\u001b[1;32m     60\u001b[0m \u001b[0;31m# 5th function\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     61\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mwrite_md_headlines_to_file\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfile_names\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0moutput_file\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 62\u001b[0;31m     \u001b[0mheadlines\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mget_line_containing\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfile_names\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m\"#\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     63\u001b[0m     \u001b[0mwrite_to_file\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0moutput_file\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mheadlines\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     64\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
 
-    "#print(\"Combinations:\",combinations)\n",
+    "    # Testing the 1st function\n",
 
-    "#print(len(combinations))"
+    "    # Testing the 2nd function\n",
 
-    "### Exercise 2"
+    "    # Testing the 3rd function\n",
 
-    "# 2.1\n",
+    "    # Testing the 4th function\n",
 
-    "#print(nameDictionary)\n",
-
-    "# 2.2\n",
-
-    "### Exercise 3"
-
-    "# 3.1\n",
-
-    "diceRange = range(1,7) # Standard six-sided die\n",
-
-    "diceCombinations = len(diceRange)**numberOfDice # Total number of combinations\n",
-
-    "# Fill the dict\n",
-
-    "# Print the dict\n",
-
-    "# Class Exercise for 01-1 Intro\n",
+    "    # Testing the 5th function\n",
 
