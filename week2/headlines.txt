@@ -16,11 +16,7 @@
 
     "# Sets up the argument parser\n",
 
-    "# Exercise 2"
-
-      "\u001b[0;32m<ipython-input-4-0a100ab2434f>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     14\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     15\u001b[0m     \u001b[0;31m# Testing the 5th function\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 16\u001b[0;31m     \u001b[0mwrite_md_headlines_to_file\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"01-Exercise-Solution.ipynb\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m\"headlines.txt\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-
-      "\u001b[0;32m~/my_notebooks/week2/modules/utils.py\u001b[0m in \u001b[0;36mwrite_md_headlines_to_file\u001b[0;34m(file_names, output_file)\u001b[0m\n\u001b[1;32m     60\u001b[0m \u001b[0;31m# 5th function\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     61\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mwrite_md_headlines_to_file\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfile_names\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0moutput_file\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 62\u001b[0;31m     \u001b[0mheadlines\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mget_line_containing\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfile_names\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m\"#\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     63\u001b[0m     \u001b[0mwrite_to_file\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0moutput_file\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mheadlines\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     64\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+    "# Exercise 2\n",
 
     "    # Testing the 1st function\n",
 
