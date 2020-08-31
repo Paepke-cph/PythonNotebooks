@@ -6,7 +6,7 @@ Week 1 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder
 <br>
 [Week 1 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week1)
 
-Week 2 Binder: TBA
+Week 2 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks.git/master?urlpath=week2%2F02-Exercise-Solution.ipynb)
 <br>
 [Week 2 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week2)
 
