@@ -61,3 +61,7 @@ def write_md_headlines_to_file(file_names, output_file):
     headlines = get_line_containing(file_names, "#")
     write_to_file(output_file, headlines)
 
+#if  __name__ == "__main__":
+#    print("Called as main")
+#else:
+#    print("Called as module")
