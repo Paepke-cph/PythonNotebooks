@@ -14,7 +14,7 @@ Week 3 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder
 <br>
 [Week 3 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week3)
 
-Week 4 Binder: TBA
+Week 4 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks.git/master?filepath=week4%2F04-Exercise-Solution.ipynb)
 <br>
 [Week 4 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week4)
 
