@@ -3,11 +3,13 @@ import random
 import csv
 import matplotlib.pyplot as plt
 
-# Exercise 1
+
 genders = ['female', 'male']
 course_names = ['Maths', 'English', 'Danish', 'Biology','Chemisty','Geology','Religion']
 classrooms = ['A101','A102','A103','A104','A105','A106','A107','A108','A109','A110','A111','A112','A113']
-
+##################
+#   Exercise 1   #
+##################
 class Course():
     def __init__(self, name, classroom, teacher, ETCS, grade = None):
         self.name = name
@@ -35,10 +37,7 @@ class DataSheet():
         return output
 
     def get_grades_as_list(self):
-        grades = []
-        for course in self.courses:
-            if course.grade != None:
-                grades.append(course.grade)
+        grades = [course.grade for course in self.courses if course.grade != None]
         return grades
 
 class Student():
@@ -50,9 +49,6 @@ class Student():
 
     def __str__(self):
         return f'Name: {self.name}, gender: {self.gender}, image_url: {self.image_url}.\nDataSheet:\n{self.dataSheet}'
-
-    def short(self):
-        return f'Name: {self.name}, gender: {self.gender}, image_url: {self.image_url}.'
 
     def get_avg_grade(self):
         avg = 0
@@ -81,7 +77,7 @@ def write_students_to_csv(students, output_file):
             for course in student.dataSheet.courses:
                 writer.writerow({'stud_name':student.name,'stud_gender':student.gender,'course_name':course.name,'teacher':course.teacher,'etcs':course.ETCS,'classroom':course.classroom,'grade':course.grade,'image_url':student.image_url})
 
-def generate_student(n):
+def generate_students(n):
     students = []
     for index in range(0, n):
         gender = random.choice(genders)
@@ -101,7 +97,7 @@ def generate_student(n):
     return students
 
 def generate_students_to_csv(output_file, n = 1):
-    students = generate_student(n)
+    students = generate_students(n)
     write_students_to_csv(students, output_file)
 
 def load_students_from_csv(input_file):
@@ -146,11 +142,8 @@ def sort_students_by_avg_grades(students):
     return sorted_list
 
 def bar_plot_student_grades(students):
-    # Note that we are only taking the first name in the following list comprehension
-    #  as to make the name more visible in the plot
-    names = [student.name.split(" ")[0] for student in sorted_students]
-    grades = [student.get_avg_grade() for student in sorted_students]
-    plt.bar(names,grades, width=0.2, align='center')
+    stud = {stu.name.split(" ")[0]:stu.get_avg_grade() for stu in students}
+    plt.bar(stud.keys(),stud.values(), width=0.2, align='center')
     plt.title("Student Grades", fontsize=12)
     plt.xlabel("Names", fontsize=8)
     plt.ylabel("Average Grades", fontsize=8)
@@ -158,10 +151,10 @@ def bar_plot_student_grades(students):
     
 def bar_plot_student_progression(students):
     categories = [x*10 for x in range(0,11)]
-    hits = [x for x in range(0,11)]
+    hits = [0 for x in range(0,11)]
     for student in students:
         prog = student.get_etcs_progression()
-        catIndex = int(abs((prog-0.5) / 10))
+        catIndex = int(abs(prog / 10))
         hits[catIndex] += 1
     plt.bar(categories, hits, width=5, align='center')
     plt.axis([0, max(categories), 0, max(hits)+5])
@@ -171,8 +164,9 @@ def bar_plot_student_progression(students):
     plt.ylabel("# Students", fontsize=8)
     plt.show()
 
-############
-# Exercise 2
+##################
+#   Exercise 2   #
+##################
 class NotEnoughStudentsException(ValueError):
     def __init__(self, *args, **kwargs):
         ValueError.__init__(self, *args, **kwargs)
@@ -195,7 +189,7 @@ def top_three_progress(students, allow_completion=False):
                 top_three.append(sorted_students[index])
         return top_three
     else:
-        raise NotEnoughStudentsException('There needs to be at least three students, currenly: {}'.format(len(students)))
+        raise NotEnoughStudentsException(f'There needs to be at least three students, currenly: {len(students)}')
 
 def write_top_three_to_file(students, output_file):
     try:
@@ -205,8 +199,9 @@ def write_top_three_to_file(students, output_file):
     except NotEnoughStudentsException as exception:
         exception.write_to_log()
 
-############
-# Exercise 3
+##################
+#   Exercise 3   #
+##################
 def pie_chart_plot_progression(students):
     categories = [x*10 for x in range(0,11)]
     hits = [0 for x in range(0,11)]
@@ -216,7 +211,6 @@ def pie_chart_plot_progression(students):
         print(prog, catIndex)
         hits[catIndex] += 1
     
-    # Get the categories in text with the % at the end or "" if no student hit the category
     proCategories = [f'%s%%' % categories[i] if hits[i] != 0 else '' for i in range(0,len(categories))]
     plt.pie(hits, labels=proCategories, autopct=lambda p:'{:.1f}%({:.0f})'.format(p,(p/100)*sum(hits)) if p != 0 else '', startangle=90)
     plt.title("ETCS Completion")
@@ -242,13 +236,13 @@ def bar_plot_course_taken(students):
     plt.show()
 
 if __name__ == '__main__':
-    n = 50
+    n = 5
     #testing = 'Exercise 1'
-    #testing = 'Exercise 2'
-    testing = 'Exercise 3'
+    testing = 'Exercise 2'
+    #testing = 'Exercise 3'
     
     print(f'[!] Running %s\n[!] With %d random students' % (testing,n))
-    #generate_students_to_csv("std.csv", n)
+    generate_students_to_csv("std.csv", n)
     students = load_students_from_csv("std.csv")
     if testing == 'Exercise 1' :
         sorted_students = sort_students_by_avg_grades(students)
@@ -265,7 +259,7 @@ if __name__ == '__main__':
         write_top_three_to_file(students, "output.csv")
 
     if testing == 'Exercise 3':
-        #pie_chart_plot_progression(students)
+        pie_chart_plot_progression(students)
         bar_plot_course_taken(students)
 
     

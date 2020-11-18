@@ -28,9 +28,7 @@ import matplotlib.pyplot as plt
 neighb = {1: 'Indre By', 2: 'Østerbro', 3: 'Nørrebro', 4: 'Vesterbro/Kgs. Enghave', 
                5: 'Valby', 6: 'Vanløse', 7: 'Brønshøj-Husum', 8: 'Bispebjerg', 9: 'Amager Øst', 
                10: 'Amager Vest', 99: 'Udenfor'}
-
 dataset = np.genfromtxt('../../data/befkbhalderstatkode.csv',delimiter=',',dtype=np.uint,skip_header=1)
-
 da_dk_code = 5100
 
 #####################
@@ -43,8 +41,8 @@ def number_of_people_per_neighbourhood(dataset, n, mask):
 
 def print_number_of_people_in_neighb(dataset,country_code,neighb):
     mask = (dataset[:,0] == 2015) & (dataset[:,3] == country_code) 
-    for k in neighb: 
-        print(f'%d personer i %s' % (number_of_people_per_neighbourhood(dataset,k,mask),neighb[k]))
+    for n in neighb: 
+        print(f'%d personer i %s' % (number_of_people_per_neighbourhood(dataset,n,mask),neighb[n]))
 
 def plot_number_of_people_in_neighbo(dataset,country_code,neighb):
     mask = (dataset[:,0] == 2015) & (dataset[:,3] == country_code)
@@ -54,7 +52,7 @@ def plot_number_of_people_in_neighbo(dataset,country_code,neighb):
     plt.show()
 
 def number_of_people_above_65_in_cph(dataset, neighb):
-    mask = (dataset[:,0] == 2015) & (dataset[:,2] > 65) & (dataset[:,3] == 5100)
+    mask = (dataset[:,0] == 2015) & (dataset[:,2] > 65)
     sum = 0
     for k in neighb:
         sum += number_of_people_per_neighbourhood(dataset,k,mask)
@@ -77,11 +75,6 @@ def line_plot_changes_in_vesterbro_and_oesterbro(dataset):
     p2, = plt.plot(years, vesterbro_amounts, label="Vesterbro")
     plt.legend(handles=[p1,p2],bbox_to_anchor=(1, 1.125), loc='upper right', borderaxespad=0.)
     plt.show()
-
-
-#####################
-    # EXERCISE 2 #
-#####################
 
 #####################
     # TESTING #

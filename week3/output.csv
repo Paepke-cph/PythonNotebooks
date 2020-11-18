@@ -1,0 +1,21 @@
+stud_name,stud_gender,course_name,teacher,etcs,classroom,grade,image_url
+Kim Feldman,female,Maths,Edith Bravo,10,A110,88,img0.png
+Kim Feldman,female,English,Vickie Pulliam,10,A108,25,img0.png
+Kim Feldman,female,Danish,Peggy Dauer,10,A105,,img0.png
+Kim Feldman,female,Biology,Renee May,10,A107,39,img0.png
+Kim Feldman,female,Chemisty,Melissa Spencer,10,A106,,img0.png
+Kim Feldman,female,Geology,Minnie Phelan,10,A106,100,img0.png
+Kim Feldman,female,Religion,Jenee Henderson,10,A106,,img0.png
+Barbara Thomas,female,Maths,Nancy Drewes,10,A101,,img4.png
+Barbara Thomas,female,English,Ashlee Guerin,10,A104,11,img4.png
+Barbara Thomas,female,Danish,Robert Stoney,10,A102,,img4.png
+Barbara Thomas,female,Biology,Isabel Botner,10,A113,,img4.png
+Barbara Thomas,female,Chemisty,Lillian Oconnor,10,A107,,img4.png
+Barbara Thomas,female,Geology,Brittany Fite,10,A106,70,img4.png
+Barbara Thomas,female,Religion,Crystal Donnelly,10,A103,25,img4.png
+Katherine Mckinnon,female,Maths,Rena Marks,10,A113,15,img1.png
+Katherine Mckinnon,female,English,Andrew Wright,10,A110,92,img1.png
+Katherine Mckinnon,female,Danish,Erin Hopkins,10,A111,,img1.png
+Katherine Mckinnon,female,Biology,Clarence Eldridge,10,A102,1,img1.png
+Katherine Mckinnon,female,Chemisty,Roxana Garcia,10,A108,7,img1.png
+Katherine Mckinnon,female,Geology,Gilbert Williams,10,A103,44,img1.png
