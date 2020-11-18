@@ -39,7 +39,7 @@ Week 9 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder
 <br>
 [Week 9 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week9)
 
-Week 10 Binder:
+Week 10 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks/HEAD?filepath=week10%2FWeek%2010%20Solution.ipynb)
 <br>
 [Week 10 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week10)
 
