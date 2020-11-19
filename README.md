@@ -25,3 +25,28 @@ Week 5 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder
 Week 6 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks/master?filepath=week6%2F06-Exercise.ipynb)
 <br>
 [Week 6 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week6)
+
+
+Week 7 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks/HEAD?filepath=week7%2FWeek7%20Solution.ipynb)
+<br>
+[Week 7 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week7)
+
+Week 8 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks/HEAD?filepath=week8%2F%20Week%208%20Solution.ipynb)
+<br>
+[Week 8 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week8)
+
+Week 9 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks/HEAD?filepath=week9%2FWeek%209%20Solution.ipynb)
+<br>
+[Week 9 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week9)
+
+Week 10 Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Paepke-cph/PythonNotebooks/HEAD?filepath=week10%2FWeek%2010%20Solution.ipynb)
+<br>
+[Week 10 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week10)
+
+Week 11 Binder:
+<br>
+[Week 11 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week11)
+
+Week 12 Binder:
+<br>
+[Week 12 Source](https://github.com/Paepke-cph/PythonNotebooks/tree/master/week12)
